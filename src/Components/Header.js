@@ -13,51 +13,29 @@ const Header = () => {
     setBtnState((btnState) => !btnState);
   };
 
-return (
+  return (
     <>
-<div className={btnState ? " navbar" : ""} onClick={handleChange}>
-      
-      <img className="hamburger" src="images\icon-menu.svg" alt="heelo" />
-     
-       
-    </div>
-    
-
-
-    {btnState &&( 
+      <div className={btnState ? " navbar" : ""} onClick={handleChange}>
+        <img className="hamburger" src="images\icon-menu.svg" alt="heelo" />
+      </div>
 
       
+        <nav className="navbar">
+          <ul>
+            <li className="bold">snap</li>
+            <li className="dropDown">
+              <DropDown />
+            </li>
+            <li>  <DropDown1 /></li>
+            <li> Careers </li>
+            <li>About</li>
+          </ul>
+          <ul>
+            <li>Login</li>
+            <li className="reg">Register</li>
+          </ul>
+        </nav>
       
-      <nav className="navbar">
-     
-        <ul>
-     
-          <li className="bold">snap</li>
-          <li className="dropDown">
-            {" "}
-            <DropDown  />{" "}
-          </li>
-
-          <li>  <DropDown1  /></li>
-          <li> Careers </li>
-          <li>About</li>
-        </ul>
-        <ul>
-       
-          <li>Login</li>
-          <li className="reg">Register</li>
-{/* 
-          <li><Drawer/></li> */}
-         
-
-        </ul>
-      </nav>
-        )}
-
-
-
-         
-     
     </>
   );
 };
