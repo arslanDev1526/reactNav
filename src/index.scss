@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  max-height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+
+  width: 95%;
+  ul {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+.reg {
+  border: solid grey 1px;
+  border-radius: 10px;
+  margin-top: -5px;
+
+  padding: 7px;
+}
+.bold {
+  font-size: 20px;
+  font-weight: 700;
+}
+.dropDown .dropDown1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hamburger {
+  display: none;
+}
+//   dropdown css
+
+.dropdown {
+  width: 90px;
+
+  img {
+    margin-left: 5px;
+  }
+}
+
+.dropdown-btn {
+}
+
+.dropdown-content {
+  width: 120px;
+
+  position: absolute;
+  top: 55px;
+  left: 80px;
+  background: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dropdown-item {
+  padding: 5px;
+
+  img {
+    padding-right: 10px;
+  }
+}
+
+// DropDown1 css
+
+.dropdown1 {
+  width: 100px;
+
+  img {
+    margin-left: 5px;
+  }
+}
+
+.dropdown-btn1 {
+}
+
+.dropdown-content1 {
+  width: 90px;
+
+  position: absolute;
+  top: 55px;
+  background: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.dropdown-item1 {
+  padding: 5px;
+}
+
+// body css
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  .content {
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+    margin-right: 60px;
+    margin-top: 40px;
+
+    h1 {
+      width: 44%;
+      font-weight: 700;
+
+      font-size: 2.5rem;
+    }
+
+    p {
+      width: 70%;
+      font-size: 18px;
+    }
+
+    button {
+      width: 18%;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      background: black;
+      font-weight: 400;
+    }
+    button:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      font-weight: 400;
+    }
+  }
+  .sub-content {
+    display: flex;
+    width: 70%;
+
+    margin-top: 40px;
+    font-size: 10px;
+    .logo {
+      width: 70%;
+    }
+  }
+  .image {
+    width: 300px;
+    margin-top: 60px;
+  }
+}
+
+//  media queries mobile view
+
+@media (max-width: 375px) {
+}
+
+/* Using SCSS variables to store breakpoints */
+$breakpoint-tablet: 375px;
+@media (max-width: $breakpoint-tablet) {
+  nav {
+    // display: none;
+  }
+  .container {
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+
+  .img-content {
+    width: 350px;
+  }
+  .image {
+    margin: 20px;
+  }
+
+  .container {
+    .content {
+      width: 90%;
+      margin: auto;
+      h1 {
+        font-size: 20px;
+        width: 100%;
+      }
+
+      p {
+        width: 120%;
+        margin: auto;
+      }
+
+      button {
+        margin: auto;
+        width: 40%;
+      }
+    }
+  }
+
+  .sub-content {
+    width: 150%;
+    position: absolute;
+    bottom: 0px;
+    top: 730px;
+    left: 70px;
+  }
+  // .drawer {
+  //   border: solid;
+  //   // float: left;
+  //   // display: flex;
+  //   // justify-content: end;
+
+  //   width: 70%;
+  //   height: 780px;
+
+  //   position: absolute;
+  //   // top: 0px;
+  //   // left: 0px;
+  //   // right: 100px;
+  //   background:red;
+  //   z-index: 100;
+  //   margin-left: 150px;
+  //   position: absolute;
+  //   right: 0px;
+  // }
+  // box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+
+  img {
+    margin: 40px 10px 4px 40px;
+
+    float: right;
+    z-index: 2;
+  }
+
+  .option {
+    display: none;
+  }
+
+  ul {
+    // background: red;
+    flex-direction: column;
+
+    width: 50%;
+    // height: 780px;
+
+    // position: absolute;
+    // top: 40px;
+    // left: 0px;
+   
+    background: red;
+    z-index: 1;
+   
+    // position: absolute;
+  }
+  .container {
+ 
+ border: solid;
+  }
+
+.navbar {
+    flex-direction: column;
+    // border: solid;
+    position: absolute;
+    left: 90px;
+
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+  border: solid;
+
+ 
+  
+   
+  }
+}
+
+//  drawer
