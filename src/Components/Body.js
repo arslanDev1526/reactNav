@@ -29,7 +29,7 @@ import React from 'react'
 
 <div className='img-content'>
         <img className='image' src= "/images/hero.png" alt="hello" /> 
-        {/* <img src="\images\icon-arrow-down.svg" alt="nope" /> */}
+       
 
 
     </div>

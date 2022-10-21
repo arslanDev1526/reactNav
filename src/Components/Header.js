@@ -15,7 +15,12 @@ const Header = () => {
 
 return (
     <>
-
+<div className={btnState ? " navbar" : ""} onClick={handleChange}>
+      
+      <img className="hamburger" src="images\icon-menu.svg" alt="heelo" />
+     
+       
+    </div>
     
 
 
@@ -49,12 +54,7 @@ return (
       </nav>
         )}
 
-<div className={btnState ? " navbar" : ""} onClick={handleChange}>
-      
-      <img className="hamburger" src="images\icon-menu.svg" alt="heelo" />
-     
-       
-    </div>
+
 
          
      
